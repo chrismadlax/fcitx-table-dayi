@@ -1,0 +1,20 @@
+fcitx 大易安裝
+1. 依序安裝套件
+   fcitx
+   cmake
+   fcitx-libs-dev
+   fcitx-tools
+   fcitx-table
+2. 下表格檔source
+   https://github.com/fcitx/fcitx-table-dayi
+3. 編譯安裝
+   cd fcitx-table-dayi-master
+   mkdir build
+   cmake . -DCMAKE_INSTALL_PREFIX=/usr
+4. 修改 tables/CMakeLists.txt 內容
+   增加以下描述
+   set(TXT2MB
+       txt2mb
+     )
+5. 下安裝指令
+   sudo make install
